@@ -1,0 +1,95 @@
+// student id : IT21191510
+// Name : Mendis A.S.P.
+// MLB_01.01_06
+// Malabe_weekdays
+class Financial_report
+{
+private:
+    int fId;
+    Order* odr;
+
+public:
+    Financial_report();
+    Financial_report(int ofId, Order* o);
+    void displayFinance();
+};
+
+// student id : IT21191510
+// Name : Mendis A.S.P.
+// MLB_01.01_06
+// Malabe_weekdays
+#include "Financial_report.h"
+
+Financial_report::Financial_report()
+{
+
+}
+
+Financial_report::Financial_report(int ofId, Order* o)
+   {
+       fId = ofId;
+       odr = o;
+   }
+
+ void Financial_report::displayFinance()
+   {
+        cout << "fId" << fId << endl;
+        odr->displayOrder();
+   }
+//----------------------
+
+
+// student id : IT21191510
+// Name : Mendis A.S.P.
+// MLB_01.01_06
+// Malabe_weekdays
+class Discount
+{
+    private:
+    {
+        int discountId;
+        int discount;
+    }
+    public:
+        Discount();
+        Discount(int dId, int d);
+        calDiscount(int d)};
+        void display();
+        ~Discount();
+ };
+ 
+ // student id : IT21191510
+// Name : Mendis A.S.P.
+// MLB_01.01_06
+// Malabe_weekdays
+#include "Discount.h"
+
+Discount::Discount()
+ {
+
+ }
+Discount::Discount(int dId, int d)
+  {
+   discountId = dId;
+   discount = d;
+  }
+
+Discount::calDiscount(int d)
+  {
+   if(10000 < pPrice)
+   {
+     d = pPrice - (pPrice*10/100);
+   }
+  }
+
+ void Discount::display()
+  {
+   cout << "Discount Id" << discountId << endl;
+   cout << "Discount" << discount <<endl;
+  }
+
+  Discount::~Discount()
+  {
+    cout << "Delete Discount Id" << dicountId << endl;
+    cout << "Delete Discount" << discount << endl;
+  }
